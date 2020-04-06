@@ -32,8 +32,8 @@ export function loadRecommendationService() {
   });
 
   const pkg = loadPackageDefinition(packageDefinition);
-  const recommendation = (pkg.recommendation as GrpcObject)
-    .RecommendationService as GrpcObject;
+  const recommendation =
+    (pkg.recommendation as GrpcObject).RecommendationService as GrpcObject;
   return recommendation;
 }
 
